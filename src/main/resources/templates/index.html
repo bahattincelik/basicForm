@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Form</title>
+</head>
+<body>
+<form th:action="@{/submitForm}" method="post">
+    <label>Bitte geben Sie ihren Namen ein</label>
+    <input type="text" name="username">
+    <button type="submit">Sender</button>
+
+</form>
+
+<p th:text="|Wilkommen, ${name} !|"></p>
+
+</body>
+</html>
